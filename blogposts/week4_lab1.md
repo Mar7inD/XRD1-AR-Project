@@ -48,7 +48,7 @@ The final result was good. The drag-and-drop interaction were intuitive and give
 
 With this my first milestone around setting the environment was done. Next steps are to clean the scripts and add more functionality like spawning objects, panel workflow, audio to objects, clear button, etc. 
 
-## Assets:
+## Asset and Code References:
 - [Campfire](https://assetstore.unity.com/packages/3d/props/the-free-medieval-and-war-props-174433)
 - [Water](https://assetstore.unity.com/packages/vfx/shaders/urp-stylized-water-shader-proto-series-187485)
 - [Forest](https://assetstore.unity.com/packages/3d/vegetation/environment-pack-free-forest-sample-168396)
