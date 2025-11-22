@@ -37,7 +37,7 @@ Once I was setted up, I started looking through various assets and testing them.
 My next step will be implementing the first clue: setting up the flashlight interaction and making the hidden text appear.
 
 ## Asset and Code References:
-- [Sci-fy scenery](https://assetstore.unity.com/packages/3d/environments/sci-fi/free-sci-fi-office-pack-195067)
+- [Sci-fi scenery](https://assetstore.unity.com/packages/3d/environments/sci-fi/free-sci-fi-office-pack-195067)
 - [Flashlight](https://assetstore.unity.com/packages/3d/props/electronics/free-flashlight-293680)
 - [Keypad](https://assetstore.unity.com/packages/3d/props/electronics/keypad-free-262151)
 - [Chest, lock and keys](https://assetstore.unity.com/packages/3d/environments/dungeons/n-gonforge-dungeon-low-poly-303819)
