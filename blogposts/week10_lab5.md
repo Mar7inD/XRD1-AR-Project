@@ -38,6 +38,10 @@ The script also keeps a list of objects tagged as ReactiveText and resets their 
 
 At one point, the flashlight occasionally fell through the floor. After experimenting with the Rigidbody settings, I fixed the issue and also improved the physical behaviour—now it drops more realistically, with better bounce and fall timing.
 
+### Concern around performance
+
+Since I used dynamic lighting for the flashlight, I was worried about staying within the batch and triangle limits that our teacher, Kasper, had set. Keeping the scene lightweight would ensure enough computational headroom for the dynamic light to not influence the overall perform. In the end, even with all the sci-fi assets included, the flashlight system ran smoothly on the Quest 2. I was really happy with the result, especially because it turned out to be a fun and rewarding challenge.
+
 ### Started Working on the Second Clue
 
 I began searching for the next clue, which required a chest with a key and lock. It took some time, but after browsing several assets, I finally found one that fits my needs.

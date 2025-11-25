@@ -34,6 +34,10 @@ With that idea, I began writing the interaction scripts. These scripts make sett
 
 - [Chest](https://github.com/Mar7inD/XRD1-VR-Project/blob/main/EscapeRoomVR/Assets/Scripts/Chest.cs) script: Handles the lid-opening animation, including speed and stopping point, since the full animation both opens and closes the chest.
 
+### Audio enhancement
+
+For the VR game to be more immersive I added special effects to the object interactions. When you put the key in the lock you hear a sound after which you hear unlocking the lock if the key is the right one and finally you hear how the chest is opening. Another example is with the flashlight which you can hear the on/off sound when switching the light. Adding this sound really enhanced the immersive feeling as I was ensured with one more sense that the action I did was received. 
+
 ### Keypad - Non-VR interations
 
 Next, I moved on to finding the final component—the keypad. I found a well-designed model, but reviews mentioned that people had trouble integrating it with VR and implementing proper VR interactions. I decided to try anyway. My idea was to use a raycast approach similar to what I used in my AR project.

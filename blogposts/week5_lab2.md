@@ -34,19 +34,19 @@ There were a few other surprises along the way:
 
 By far a lot of ground feeling was made and many of the scripts have a fallback procedures, so the application remained responsive so I could see how everything works together and debug.
 
+An interesting observation was that some materials in my app appeared overly bright or looked unusually flat. Initially, I assumed it was an issue with my own setup, but after doing some research, I discovered that AR Foundation’s estimated light intensity doesn’t always quite match the real-world lighting conditions.
+
 ## Audio
 I spend some time debugging and trying to resolve the issue with not hearing audio when I build the app on my iPhone and after research on the internet I found out that the mute switch must be toggled off in order to hear the sounds. So the sounds now are in place and I can here them.
 
+
 ## Panel workflow
-The environment and object panels were overlapping is both buttons were clicked and the object were able to be spawned multiple times in one environment. After some thinking and consideration I come up with clear panel flow. Where as expected you start with selecting your environment and then you are able to select objects you want to place. Further I blocked buttons of already spawned object and visualizing that with a red box around the button picture. This workflow made the process of creating environment more focused. Instead of not sure about rules of objects and can they be spawned on top of land or not now the user is forced to chose environment and then spawn its objects. 
+The environment and object panels were overlapping is both buttons were clicked and the object were able to be spawned multiple times in one environment. After some thinking and consideration I come up with clear panel flow. Where as expected you start with selecting your environment and then you are able to select objects you want to place. Further I blocked buttons of already spawned object and visualizing that with a red box around the button picture. This workflow made the process of creating environment more focused. Instead of not sure about rules of objects and can they be spawned on top of land or not now the user is forced to chose environment and then spawn its objects.
 
-## Key Learnings
+## Plane detection challenge
 
-This period taught me a lot about AR development:
+When the environment lacked texture or had poor lighting, it became much more difficult for visual SLAM to support accurate plane detection. This happened because the system couldn’t find enough reliable feature points to properly analyze the surface. Since I also had access to an iPhone equipped with a LiDAR sensor, I repeated the same tests to compare the results. The difference was clear: in challenging scenarios, SLAM benefits greatly from the additional depth information provided by LiDAR.
 
-- How to organize and consolidate scripts efficiently
-- Touch-based object manipulation and scaling
-- Troubleshooting rendering pipelines and asset inconsistencies
-- Debugging cross-platform input and shader behavior
+With LiDAR enabled, plane detection was noticeably easier because it doesn’t rely on visual features alone. Instead, it emits depth-measuring pulses, allowing the device to map surfaces even in feature-poor or low-light environments.
 
-Most importantly, every challenge became an opportunity to deepen my understanding of Unity, AR interactions, and user experience design. Next steps would be to 
+Overall, this experiment highlighted how LiDAR—and additional sensors like the IMU (accelerometer + gyroscope)—enhance AR tracking robustness and reduce the dependency on strong lighting or detailed surfaces.
